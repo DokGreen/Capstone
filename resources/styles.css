@@ -29,10 +29,15 @@
   box-sizing:border-box;
   background-color: #eee;
 }
-.mainimg {
-  height: 400px;
-  width: 600px;
+
+#sect1-con {
+  width: 60%;
   margin: 32px 24px;
+}
+
+#mainimg {
+  height: 500px;
+  width: 100%;
 }
 
 .text {
@@ -54,3 +59,54 @@ button {
 }
 /*-------------------------------------------*/
 /*-------------------------------------------Sect2*/
+#sect2 {
+  width: 100%;
+  display: flex;
+  margin-bottom: 32px;
+  border: 5px solid red;
+  box-sizing:border-box;
+}
+
+#sect2-con {
+  height: 500px;
+  width: 60%;
+  margin: 32px 24px 0 24px;
+}
+
+#mainimg2 {
+  height: 375px;
+  width: 100%;
+}
+
+#sect2-con h2 {
+  margin-top: 32px;
+}
+
+#sect2-con p:first-of-type { /*affects the first p in this id*/
+  margin: 24px 0 70px 0;
+  /*when header txt is added change the 70px*/
+}
+
+#sect2 ul {
+  margin-top: 22px;
+}
+
+#sect2 ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+#sect2 ul li img {
+  height: auto;
+  width: 35%;
+}
+
+.txtbox {
+  width: 65%;
+  margin-left: 25px;
+}
+
+.txtbox p:first-of-type {
+  margin: 8px 0;
+}
