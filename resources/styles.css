@@ -1,0 +1,56 @@
+/*-------------------------------------------Nav*/
+#nav {
+  height: 64px;
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box; /*Includeds padding in width*/
+  border: 5px solid red;
+}
+#subnav {
+    display: flex;
+}
+
+#subnav li {
+  margin-right: 16px;
+}
+
+#subnav li:last-child {
+  margin-right: 0;
+}
+/*-------------------------------------------*/
+/*-------------------------------------------Sect1*/
+#sect1 {
+  width: 100%;
+  display: flex;
+  border: 5px solid red;
+  box-sizing:border-box;
+  background-color: #eee;
+}
+.mainimg {
+  height: 400px;
+  width: 600px;
+  margin: 32px 24px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 8px 0;
+  border: solid #36454F;
+  color: white;
+  background-color: #36454F;
+}
+/*-------------------------------------------*/
+/*-------------------------------------------Sect2*/
