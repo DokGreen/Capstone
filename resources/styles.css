@@ -110,3 +110,51 @@ button {
 .txtbox p:first-of-type {
   margin: 8px 0;
 }
+/*-------------------------------------------------*/
+/*-------------------------------------------------Sect3*/
+#sect3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eee;
+}
+
+#sect3 h2 {
+  margin-top: 32px;
+}
+
+#cat {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 72px;
+}
+
+.subcat {
+  display: flex;
+}
+
+.catcon {
+  height: 280px;
+  width: 300px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+
+  background-color: #fff;
+}
+
+.subcat .catcon:last-child {
+  margin-right: 0;
+}
+
+.catcon img {
+  height: auto;
+  width: 100%;
+}
+
+.catxt {
+  margin: 16px 0 24px 16px;
+}
+
+.course {
+  margin: 8px 0;
+}
