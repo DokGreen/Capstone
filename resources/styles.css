@@ -158,3 +158,57 @@ button {
 .course {
   margin: 8px 0;
 }
+/*-------------------------------------------*/
+/*-----------------------------------------sect 4*/
+#Sect4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+#Sect4 h2 {
+  margin: 32px auto;
+}
+
+video {
+  height: auto;
+  width: 100%;
+}
+
+#media {
+  height: auto;
+  width: 60%;
+  margin-right: 24px;
+}
+
+#media h4 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+#media p {
+  margin-bottom: 32px;
+}
+
+#Sect4-con {
+  display: flex;
+}
+
+#medialist {
+  width: 40%;
+}
+
+#medialist ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+#medialist ul li:first-of-type {
+  background-color: #eee;
+}
+
+#medialist ul li img {
+  width: 35%;
+  margin: 16px;
+}
