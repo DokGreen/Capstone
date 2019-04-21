@@ -212,3 +212,23 @@ video {
   width: 35%;
   margin: 16px;
 }
+/*-------------------------------------------*/
+/*-------------------------------------------Footer*/
+#footer {
+  display: flex;
+  justify-content:space-between;
+  padding: 0 24px 60px 24px;
+  border-top: 5px solid #eee;
+}
+
+#footer p, #footer ul {
+  margin-top: 16px;
+}
+
+#footer ul li {
+  display: inline-block;
+}
+
+#footer ul li:last-child {
+  margin-left: 10px;
+}
