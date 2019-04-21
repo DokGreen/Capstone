@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box; /*Includeds padding in width*/
-  border: 5px solid red;
 }
 #subnav {
     display: flex;
@@ -20,14 +19,21 @@
 #subnav li:last-child {
   margin-right: 0;
 }
+
+#bold {
+  font-weight: bold;
+}
 /*-------------------------------------------*/
 /*-------------------------------------------Sect1*/
 #sect1 {
   width: 100%;
   display: flex;
-  border: 5px solid red;
   box-sizing:border-box;
   background-color: #eee;
+}
+
+#sect1 h1 {
+  font-size: 50px;
 }
 
 #sect1-con {
@@ -41,6 +47,7 @@
 }
 
 .text {
+  width: 30%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -63,7 +70,6 @@ button {
   width: 100%;
   display: flex;
   margin-bottom: 32px;
-  border: 5px solid red;
   box-sizing:border-box;
 }
 
@@ -79,6 +85,7 @@ button {
 }
 
 #sect2-con h2 {
+  font-size: 40px;
   margin-top: 32px;
 }
 
@@ -94,7 +101,12 @@ button {
 #sect2 ul li {
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  padding: 16px 0;
+  padding-left: 16px;
+}
+
+#sect2 ul li:last-of-type {
+  background-color: #eee;
 }
 
 #sect2 ul li img {
