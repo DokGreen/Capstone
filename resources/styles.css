@@ -133,7 +133,6 @@ button {
 .frame {
   height: 150px;
   width: 35%;
-  border: 2px solid red;
 }
 
 #frame1 {
@@ -409,7 +408,19 @@ video {
   .frame {
     height: 200px;
     width: 100%;
+  }
+
+  #frame1 {
     background-image: url("imgs/information-orientation-mobile.jpg");
+    background-size: cover;
+  }
+  #frame2 {
+    background-image: url("imgs/information-campus-mobile.jpg");
+    background-size: cover;
+  }
+  #frame3 {
+    background-image: url("imgs/information-guest-lecture-mobile.jpg");
+    background-size: cover;
   }
 
   #sect2 ul li img {
