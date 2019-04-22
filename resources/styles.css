@@ -40,6 +40,10 @@
   margin-right: 0;
 }
 
+#mobilenav {
+  display: none;
+}
+
 #bold {
   color: #36454F;
   font-weight: bold;
@@ -301,4 +305,124 @@ video {
 
 #footer ul li:last-child {
   margin-left: 10px;
+}
+/*---------------------------------------------*/
+
+/*-------------------------------------------Mobile screens*/
+/*---------------------------------------------------Nav*/
+@media only screen and (max-width: 480px) {
+  #nav {
+    height: 64px;
+    justify-content: center;
+  }
+
+  #navtxt {
+    display: none;
+  }
+}
+
+#subnav {
+  display: none;
+}
+
+#mobilenav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/*---------------------------------------------------*/
+/*------------------------------------------------sect1*/
+#sect1 {
+  flex-direction: column;
+}
+
+#sect1-con {
+  width: 100%;
+  margin: 0;
+}
+
+#mainimg {
+  height: 50%;
+}
+
+.text {
+  width: 100%;
+  margin: 32px 16px;
+}
+
+.text p {
+  font-size: 20px;
+  margin: 32px 0 32px 0;
+}
+
+button {
+  padding: 12px 0;
+  font-size: 20px;
+  border: solid #36454F;
+  color: white;
+  background-color: #36454F;
+}
+/*------------------------------------------------*/
+/*------------------------------------------------sect2*/
+#sect2-con {
+  display: none;
+}
+
+#sect2 ul {
+  width: 100%;
+  margin: 0 16px;
+}
+
+#sect2 ul li {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
+  border: 5px solid red;
+}
+
+#sect2 ul li img {
+  height: 200px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.txtbox {
+  width: 100%;
+  margin: 20px 0 0 16px;
+}
+/*------------------------------------------------*/
+/*------------------------------------------------sect3*/
+#sect3 {
+  background-color: #fff;
+}
+
+#sect3 h2 {
+  margin: 32px 0 16px 0;
+}
+
+#cat {
+  width: 100%;
+  margin: 0;
+}
+
+.subcat {
+  width: 100%;
+  flex-direction: column;
+}
+
+.catcon {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 8px;
+  background-color: #eee;
+}
+
+.catcon img, .catcon p {
+  display: none;
+}
+
+.catxt {
+  margin: 16px 0 24px 16px;
 }
