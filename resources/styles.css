@@ -1,3 +1,10 @@
+/*px changes will be seen throughout, I think the increased space looks better*/
+
+/*-------------------------------------------Global*/
+* { /*Not working for some reason*/
+  font-family: Helvetica, sans-serif;
+}
+/*----------------------------------------------*/
 /*-------------------------------------------Nav*/
 #nav {
   height: 64px;
@@ -7,7 +14,20 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box; /*Includeds padding in width*/
+  font-family: Helvetica, sans-serif;
 }
+
+#navtxt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#navtxt img {
+  height: 40px;
+  width: auto;
+}
+
 #subnav {
     display: flex;
 }
@@ -21,6 +41,7 @@
 }
 
 #bold {
+  color: #36454F;
   font-weight: bold;
 }
 /*-------------------------------------------*/
@@ -30,10 +51,13 @@
   display: flex;
   box-sizing:border-box;
   background-color: #eee;
+  font-family: Helvetica, sans-serif;
 }
 
 #sect1 h1 {
-  font-size: 50px;
+  font-size: 40px;
+  font-family:"Arial black", Helvetica, sans-serif;
+  color: #36454F;
 }
 
 #sect1-con {
@@ -71,6 +95,7 @@ button {
   display: flex;
   margin-bottom: 32px;
   box-sizing:border-box;
+  font-family: Helvetica, sans-serif;
 }
 
 #sect2-con {
@@ -85,12 +110,14 @@ button {
 }
 
 #sect2-con h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 32px;
+  font-family:"Arial black", Helvetica, sans-serif;
+  color: #36454F;
 }
 
 #sect2-con p:first-of-type { /*affects the first p in this id*/
-  margin: 24px 0 70px 0;
+  margin: 24px 0 60px 0;
   /*when header txt is added change the 70px*/
 }
 
@@ -114,13 +141,28 @@ button {
   width: 35%;
 }
 
+#quote {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .txtbox {
   width: 65%;
   margin-left: 25px;
 }
 
+.txtbox h6, #media h4 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #36454F;
+}
+
 .txtbox p:first-of-type {
-  margin: 8px 0;
+  margin: 8px 0 16px 0;
+}
+
+.link {
+  color: #1919ff;
 }
 /*-------------------------------------------------*/
 /*-------------------------------------------------Sect3*/
@@ -129,10 +171,14 @@ button {
   flex-direction: column;
   align-items: center;
   background-color: #eee;
+  font-family: Helvetica, sans-serif;
 }
 
 #sect3 h2 {
+  font-size: 30px;
   margin-top: 32px;
+  font-family:"Arial black", Helvetica, sans-serif;
+  color: #36454F;
 }
 
 #cat {
@@ -150,7 +196,6 @@ button {
   width: 300px;
   margin-right: 32px;
   margin-bottom: 32px;
-
   background-color: #fff;
 }
 
@@ -167,8 +212,15 @@ button {
   margin: 16px 0 24px 16px;
 }
 
+.catxt h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #36454F;
+}
+
 .course {
   margin: 8px 0;
+  color: #a8a8;
 }
 /*-------------------------------------------*/
 /*-----------------------------------------sect 4*/
@@ -176,10 +228,14 @@ button {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
+  font-family: Helvetica, sans-serif;
 }
 
 #Sect4 h2 {
+  font-size: 30px;
   margin: 32px auto;
+  font-family:"Arial black", Helvetica, sans-serif;
+  color: #36454F;
 }
 
 video {
@@ -195,7 +251,8 @@ video {
 
 #media h4 {
   margin-top: 24px;
-  margin-bottom: 8px;
+  margin-bottom: 15px; /*increased from 8px as I think it looks better*/
+  color: #36454F;
 }
 
 #media p {
@@ -231,6 +288,7 @@ video {
   justify-content:space-between;
   padding: 0 24px 60px 24px;
   border-top: 5px solid #eee;
+  font-family: Helvetica, sans-serif;
 }
 
 #footer p, #footer ul {
