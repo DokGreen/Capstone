@@ -313,6 +313,7 @@ video {
 @media only screen and (max-width: 480px) {
   #nav {
     height: 64px;
+    padding: 0;
     justify-content: center;
   }
 
@@ -329,11 +330,13 @@ video {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border: 5px solid red;
 }
 /*---------------------------------------------------*/
 /*------------------------------------------------sect1*/
 #sect1 {
   flex-direction: column;
+  border: 5px solid red;
 }
 
 #sect1-con {
@@ -356,6 +359,7 @@ video {
 }
 
 button {
+  width: 50%; /*restore to 100 when right space is fixed*/
   padding: 12px 0;
   font-size: 20px;
   border: solid #36454F;
@@ -370,14 +374,15 @@ button {
 
 #sect2 ul {
   width: 100%;
-  margin: 0 16px;
+
+  border: 5px solid red;
 }
 
 #sect2 ul li {
   display: flex;
   flex-direction: column;
   margin: 32px 0;
-  border: 5px solid red;
+  padding: 0;
 }
 
 #sect2 ul li img {
@@ -395,6 +400,7 @@ button {
 /*------------------------------------------------sect3*/
 #sect3 {
   background-color: #fff;
+  border: 5px solid red;
 }
 
 #sect3 h2 {
@@ -425,4 +431,34 @@ button {
 
 .catxt {
   margin: 16px 0 24px 16px;
+}
+/*------------------------------------------------*/
+/*------------------------------------------------Sect4*/
+#Sect4 {
+  margin: 0;
+  border: 5px solid red;
+}
+
+#Sect4 h2 {
+  margin: 32px, 0, 16px, 0;
+}
+
+#media {
+  width: 100%;
+  margin: 0;
+}
+
+#media h4, #media p, #medialist {
+  display: none;
+}
+/*------------------------------------------------*/
+/*------------------------------------------------Footer*/
+#footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 5px solid red;
+}
+
+#footer ul {
+  display: none;
 }
