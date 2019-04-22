@@ -126,7 +126,29 @@ button {
 }
 
 #sect2 ul {
+  width: 40%;
   margin-top: 22px;
+}
+
+.frame {
+  height: 150px;
+  width: 35%;
+  border: 2px solid red;
+}
+
+#frame1 {
+  background-image: url("imgs/information-orientation.jpg");
+  background-size: cover;
+}
+
+#frame2 {
+  background-image: url("imgs/information-campus.jpg");
+  background-size: cover;
+}
+
+#frame3 {
+  background-image: url("imgs/information-guest-lecture.jpg");
+  background-size: cover;
 }
 
 #sect2 ul li {
@@ -141,8 +163,8 @@ button {
 }
 
 #sect2 ul li img {
-  height: auto;
-  width: 35%;
+  height: 100%;
+  width: 100%;
 }
 
 #quote {
@@ -384,7 +406,14 @@ video {
     padding: 0;
   }
 
+  .frame {
+    height: 200px;
+    width: 100%;
+    background-image: url("imgs/information-orientation-mobile.jpg");
+  }
+
   #sect2 ul li img {
+    display: none;
     height: 200px;
     width: 100%;
     margin: 0;
