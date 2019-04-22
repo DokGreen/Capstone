@@ -311,7 +311,11 @@ video {
 /*-------------------------------------------Mobile screens*/
 /*---------------------------------------------------Nav*/
 @media only screen and (max-width: 480px) {
-  #nav {
+  #nav, #sect1, #sect2, #sect3, #Sect4, #footer {
+    box-sizing: border-box;
+  }
+
+#nav {
     height: 64px;
     padding: 0;
     justify-content: center;
@@ -320,145 +324,139 @@ video {
   #navtxt {
     display: none;
   }
-}
 
-#subnav {
-  display: none;
-}
+  #subnav {
+    display: none;
+  }
 
-#mobilenav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  border: 5px solid red;
-}
-/*---------------------------------------------------*/
-/*------------------------------------------------sect1*/
-#sect1 {
-  flex-direction: column;
-  border: 5px solid red;
-}
+  #mobilenav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  /*---------------------------------------------------*/
+  /*------------------------------------------------sect1*/
+  #sect1 {
+    flex-direction: column;
+  }
 
-#sect1-con {
-  width: 100%;
-  margin: 0;
-}
+  #sect1-con {
+    width: 100%;
+    margin: 0;
+  }
 
-#mainimg {
-  height: 50%;
-}
+  #mainimg {
+    height: 50%;
+  }
 
-.text {
-  width: 100%;
-  margin: 32px 16px;
-}
+  .text {
+    width: 100%;
+    margin: 32px 16px;
+  }
 
-.text p {
-  font-size: 20px;
-  margin: 32px 0 32px 0;
-}
+  .text p {
+    font-size: 20px;
+    margin: 32px 0 32px 0;
+  }
 
-button {
-  width: 50%; /*restore to 100 when right space is fixed*/
-  padding: 12px 0;
-  font-size: 20px;
-  border: solid #36454F;
-  color: white;
-  background-color: #36454F;
-}
-/*------------------------------------------------*/
-/*------------------------------------------------sect2*/
-#sect2-con {
-  display: none;
-}
+  button {
+    width: 50%; /*restore to 100 when right space is fixed*/
+    padding: 12px 0;
+    font-size: 20px;
+    border: solid #36454F;
+    color: white;
+    background-color: #36454F;
+  }
+  /*------------------------------------------------*/
+  /*------------------------------------------------sect2*/
+  #sect2-con {
+    display: none;
+  }
 
-#sect2 ul {
-  width: 100%;
+  #sect2 ul {
+    width: 100%;
+  }
 
-  border: 5px solid red;
-}
+  #sect2 ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0;
+    padding: 0;
+  }
 
-#sect2 ul li {
-  display: flex;
-  flex-direction: column;
-  margin: 32px 0;
-  padding: 0;
-}
+  #sect2 ul li img {
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-#sect2 ul li img {
-  height: 200px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
+  .txtbox {
+    width: 100%;
+    margin: 20px 0 0 16px;
+  }
+  /*------------------------------------------------*/
+  /*------------------------------------------------sect3*/
+  #sect3 {
+    background-color: #fff;
+  }
 
-.txtbox {
-  width: 100%;
-  margin: 20px 0 0 16px;
-}
-/*------------------------------------------------*/
-/*------------------------------------------------sect3*/
-#sect3 {
-  background-color: #fff;
-  border: 5px solid red;
-}
+  #sect3 h2 {
+    margin: 32px 0 16px 0;
+  }
 
-#sect3 h2 {
-  margin: 32px 0 16px 0;
-}
+  #cat {
+    width: 100%;
+    margin: 0;
+  }
 
-#cat {
-  width: 100%;
-  margin: 0;
-}
+  .subcat {
+    width: 100%;
+    flex-direction: column;
+  }
 
-.subcat {
-  width: 100%;
-  flex-direction: column;
-}
+  .catcon {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 8px;
+    background-color: #eee;
+  }
 
-.catcon {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 8px;
-  background-color: #eee;
-}
+  .catcon img, .catcon p {
+    display: none;
+  }
 
-.catcon img, .catcon p {
-  display: none;
-}
+  .catxt {
+    margin: 16px 0 24px 16px;
+  }
+  /*------------------------------------------------*/
+  /*------------------------------------------------Sect4*/
+  #Sect4 {
+    margin: 0;
+  }
 
-.catxt {
-  margin: 16px 0 24px 16px;
-}
-/*------------------------------------------------*/
-/*------------------------------------------------Sect4*/
-#Sect4 {
-  margin: 0;
-  border: 5px solid red;
-}
+  #Sect4 h2 {
+    margin: 32px, 0, 16px, 0;
+  }
 
-#Sect4 h2 {
-  margin: 32px, 0, 16px, 0;
-}
+  #media {
+    width: 100%;
+    margin: 0;
+  }
 
-#media {
-  width: 100%;
-  margin: 0;
-}
+  #media h4, #media p, #medialist {
+    display: none;
+  }
+  /*------------------------------------------------*/
+  /*------------------------------------------------Footer*/
+  #footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
-#media h4, #media p, #medialist {
-  display: none;
-}
-/*------------------------------------------------*/
-/*------------------------------------------------Footer*/
-#footer {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: 5px solid red;
-}
+  #footer ul {
+    display: none;
+  }
 
-#footer ul {
-  display: none;
 }
