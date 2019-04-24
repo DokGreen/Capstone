@@ -59,7 +59,8 @@
 }
 
 #sect1 h1 {
-  font-size: 40px;
+  width: 98%;
+  font-size: 35px;
   font-family:"Arial black", Helvetica, sans-serif;
   color: #36454F;
 }
@@ -121,7 +122,7 @@ button {
 }
 
 #sect2-con p:first-of-type { /*affects the first p in this id*/
-  margin: 24px 0 60px 0;
+  margin: 24px 0 50px 0;
   /*when header txt is added change the 70px*/
 }
 
@@ -330,11 +331,23 @@ video {
 /*---------------------------------------------*/
 
 /*-------------------------------------------Mobile screens*/
-/*---------------------------------------------------Nav*/
+/*------------------------------------add margin and padding to width*/
 @media only screen and (max-width: 480px) {
-  #nav, #sect1, #sect2, #sect3, #Sect4, #footer {
+  #nav, #sect1, #sect2, #sect3, #Sect4, #footer{
     box-sizing: border-box;
   }
+  /*-----------------------------------------------------*/
+
+  /*Fix for the whitspace that kept appearing right side*/
+  #navtxt, #subnav, #mobilenav,
+  .text, button, #sect2-con, #sect2 ul, #sect2 ul li,
+   #sect2 ul li img,
+   #cat .subcat, .catcon, .catxt, #medialist, #footer{
+    box-sizing: border-box;
+    border: 5px solid transparent;
+  }
+  /*-----------------------------------------------------*/
+
 
 #nav {
     height: 64px;
@@ -371,7 +384,7 @@ video {
   }
 
   .text {
-    width: 100%;
+    width: 90%;
     margin: 32px 16px;
   }
 
@@ -381,7 +394,7 @@ video {
   }
 
   button {
-    width: 50%; /*restore to 100 when right space is fixed*/
+    width: 100%; /*restore to 100 when right space is fixed*/
     padding: 12px 0;
     font-size: 20px;
     border: solid #36454F;
@@ -403,6 +416,10 @@ video {
     flex-direction: column;
     margin: 32px 0;
     padding: 0;
+  }
+
+  #sect2 ul li:last-of-type {
+    background-color: #fff;
   }
 
   .frame {
@@ -453,13 +470,17 @@ video {
   .subcat {
     width: 100%;
     flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  #lastcat {
+    margin-bottom: 0;
   }
 
   .catcon {
     height: 100%;
-    width: 100%;
-    margin: 0;
-    margin-bottom: 8px;
+    width: 97%;
+    margin: 0 8px 8px 8px;
     background-color: #eee;
   }
 
