@@ -71,7 +71,7 @@
 }
 
 #mainimg {
-  height: 500px;
+  height: 100%;
   width: 100%;
 }
 
@@ -110,7 +110,7 @@ button {
 }
 
 #mainimg2 {
-  height: 375px;
+  height: 80%;
   width: 100%;
 }
 
@@ -328,8 +328,38 @@ video {
 #footer ul li:last-child {
   margin-left: 10px;
 }
-/*---------------------------------------------*/
+/*---------------------------------------------Breakpoint 1*/
+@media only screen and (min-width: 479px) and (max-width: 920px) {
+  body {
+    background-color: red;
+  }
 
+  #nav, #sect1, #sect2, #sect3, #Sect4, #footer{
+    box-sizing: border-box;
+  }
+
+  #navtxt, #subnav, #mobilenav,
+  .text, button, #sect2-con, #sect2 ul, #sect2 ul li,
+   #sect2 ul li img,
+   #cat .subcat, .catcon, .catxt, #medialist, #footer{
+    box-sizing: border-box;
+    border: 5px solid transparent;
+  }
+
+  #mainimg2 {
+    height: 50%;
+  }
+
+  .frame {
+    height: 75px;
+    border: solid green;
+  }
+
+  .txtbox p:nth-child(even) {
+    display: none;
+  }
+
+}
 /*-------------------------------------------Mobile screens*/
 /*------------------------------------add margin and padding to width*/
 @media only screen and (max-width: 480px) {
