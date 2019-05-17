@@ -359,6 +359,11 @@ video {
     display: none;
   }
 
+  #medialist ul li img {
+    width: 30%;
+    margin: 16px;
+  }
+
 }
 /*-------------------------------------------Mobile screens*/
 /*------------------------------------add margin and padding to width*/
