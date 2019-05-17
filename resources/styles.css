@@ -98,7 +98,7 @@ button {
 #sect2 {
   width: 100%;
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 62px;
   box-sizing:border-box;
   font-family: Helvetica, sans-serif;
 }
@@ -220,6 +220,7 @@ button {
 .catcon {
   height: 280px;
   width: 300px;
+
   margin-right: 32px;
   margin-bottom: 32px;
   background-color: #fff;
@@ -362,6 +363,16 @@ video {
   #medialist ul li img {
     width: 30%;
     margin: 16px;
+  }
+
+  .catcon {
+    margin-right: 2%;
+    margin-bottom: 0%;
+    background-color: inherit;
+  }
+
+  .catxt p {
+    display: none;
   }
 
 }
