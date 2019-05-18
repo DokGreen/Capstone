@@ -211,6 +211,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 25px;
 }
 
 .subcat {
@@ -330,10 +331,7 @@ video {
   margin-left: 10px;
 }
 /*---------------------------------------------Breakpoint 1*/
-@media only screen and (min-width: 479px) and (max-width: 920px) {
-  body {
-    background-color: red;
-  }
+@media only screen and (min-width: 471px) and (max-width: 920px) {
 
   #nav, #sect1, #sect2, #sect3, #Sect4, #footer{
     box-sizing: border-box;
@@ -360,28 +358,37 @@ video {
     display: none;
   }
 
+  #cat {
+    margin-left: 0;
+    }
+
   .catcon {
     height: 50%;
   }
   /*could have given IDs but wanted to see if an array style would work*/
   .subcat:nth-child(1) .catcon:nth-child(1) {
-    background-color: red;
+    background: url("imgs/course-software.jpg") no-repeat;
+    background-size: cover;
   }
   .subcat:nth-child(1) .catcon:nth-child(2) {
-    background-color: green;
+    background: url("imgs/course-computer-art.jpg") no-repeat;
+    background-size: cover;
   }
   .subcat:nth-child(1) .catcon:nth-child(3) {
-    background-color: blue;
+    background: url("imgs/course-design.jpg") no-repeat;
+    background-size: cover;
   }
   .subcat:nth-child(2) .catcon:nth-child(1) {
-    background-color: blue;
+    background: url("imgs/course-data.jpg") no-repeat;
+    background-size: cover;
   }
   .subcat:nth-child(2) .catcon:nth-child(2) {
     background: url("imgs/course-business.jpg") no-repeat;
     background-size: cover;
   }
   .subcat:nth-child(2) .catcon:nth-child(3) {
-    background-color: green;
+    background: url("imgs/course-marketing.jpg") no-repeat;
+    background-size: cover;
   }
 
   .catxt {
@@ -396,6 +403,47 @@ video {
   }
 
 }
+
+@media only screen and (max-width:670px){
+  body {
+    background-color: green;
+  }
+
+  #subnav {
+    display: none;
+  }
+
+  #mobilenav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #sect1 h1 {
+    font-size: 24px;
+  }
+
+  #quote {
+    margin-top: -20px;
+  }
+
+  .frame {
+    display: none;
+  }
+
+  #medialist ul li img {
+    display: none;
+  }
+
+  .txtbox {
+    margin-bottom: 10px;
+  }
+
+  .txtbox:nth-child(2) {
+    margin-top: 10px;
+  }
+}
+
 /*-------------------------------------------Mobile screens*/
 /*------------------------------------add margin and padding to width*/
 @media only screen and (max-width: 480px) {
